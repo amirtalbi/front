@@ -1,3 +1,14 @@
+<script>
+import AppNavbar from "./components/AppNavbar.vue";
+export default {
+  components: {
+    AppNavbar,
+  }}
+</script>
+
 <template>
-<router-view></router-view>
+    <div> 
+        <AppNavbar />
+        <router-view></router-view>
+    </div>
 </template>
