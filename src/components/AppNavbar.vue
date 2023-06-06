@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-white shadow navigation">
     <div class="max-w-screen-xl mx-auto px-4">
-      <div class="flex items-center justify-between h-32">
+      <div class="flex items-center justify-between h-16 py-12">
         <!-- Logo -->
         <div class="flex-shrink-0">
           <img src="../assets/logo-dawii.png" alt="Logo" class="w-24" />
@@ -9,19 +9,19 @@
 
         <!-- Menu de navigation -->
         <div class="hidden md:block">
-          <ul class="flex items-center space-x-6">
+          <ul class="flex items-center space-x-10">
             <!-- Éléments de menu -->
             <li>
-              <a href="/" class="text-black hover:text-gray text-lg">Accueil</a>
+              <a href="/" class="text-black hover:text-gray text-xl">Accueil</a>
             </li>
             <li>
-              <a href="/presentation" class="text-black hover:text-gray text-lg"
+              <a href="/presentation" class="text-black hover:text-gray text-xl"
                 >La formation</a
               >
             </li>
             <!-- Élément de menu dropdown -->
             <li class="relative" @click="toggleDropdown">
-              <button class="text-black hover:text-gray text-lg">
+              <button class="text-black hover:text-gray text-xl">
                 Offres
                 <span class="fa fa-caret-down"></span>
               </button>
@@ -53,7 +53,7 @@
               </ul>
             </li>
             <li>
-              <a href="#" class="text-black hover:text-gray text-lg"
+              <a href="#" class="text-black hover:text-gray text-xl"
                 >Mon espace</a
               >
             </li>
