@@ -12,10 +12,10 @@
           <ul class="flex items-center space-x-6">
             <!-- Éléments de menu -->
             <li>
-              <a href="#" class="text-black hover:text-gray text-lg">Accueil</a>
+              <a href="/" class="text-black hover:text-gray text-lg">Accueil</a>
             </li>
             <li>
-              <a href="#" class="text-black hover:text-gray text-lg"
+              <a href="/presentation" class="text-black hover:text-gray text-lg"
                 >La formation</a
               >
             </li>
