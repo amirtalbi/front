@@ -5,3 +5,9 @@
 .navigation{
     background-color: #2C808F;
   }
+
+.information_eclole{
+  background: linear-gradient(180deg, rgba(44, 128, 143, 0.7) 32.29%, rgba(44, 128, 143, 0.35) 100%);
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
