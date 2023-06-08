@@ -48,7 +48,7 @@ export default {
     if (user.isAuthenticated) {
       next("/"); // L'utilisateur est authentifié, continuer la navigation
     } else {
-      next("/login"); // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
+      next("/connexion"); // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
     }
   },
   data() {
