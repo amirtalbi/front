@@ -1,9 +1,5 @@
 <template>
   <div class="md:container md:mx-auto">
-    <div class="row">
-      <p class="lead mt-3">Accueil</p>
-    </div>
-    <br />
     <div class="my-4">
         <img src="../assets/iut_romero.jpg" alt="photo de l'iut d'évry, site de romero">
     </div>
