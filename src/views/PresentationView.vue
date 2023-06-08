@@ -1,14 +1,18 @@
 <template>
   <div class="md:container md:mx-auto">
-    <div class="my-4">
-      <img
-        src="../assets/iut_romero.jpg"
-        alt="photo de l'iut d'évry, site de romero"
-      />
+    <div class="my-4 ">
+      <div class="flex flex-row justify-end">
+        <img src="../assets/dev_presentation.png" class="w-full float" alt="photo de l'iut d'évry, site de romero">
+          <p class="absolute mt-20 right-32 font-bold text-3xl text-white">Développement avancé <br>
+            d'application web <br>
+            internet et intranet</p>
+        </div>
     </div>
     <div class="flex flex-row justify-around m-16">
-      <div class="bg-zinc-200 w-11/12 mr-8 p-4">
-        <h2 class="text-3xl">Présentation</h2>
+      <div class="w-11/12 mr-8 p-4">
+        <h2 class="text-3xl">
+          Présentation
+        </h2>
         <div class="mt-4 text-justify">
           La Licence Professionnelle Métiers de l’Informatique : Applications
           Web (MIAW) présente deux parcours : <br />
@@ -98,9 +102,9 @@
         </a>
       </div>
       <div class="w-2/5 ml-8">
-        <aside class="bg-zinc-200 p-2 px-3 pb-5">
+        <aside class="information_eclole p-2 px-3 pb-5">
           <div class="justify-content-start mb-5">
-            <h3 class="text-lg font-bold">Localisation</h3>
+            <h3 class=" fas fa-map-marker-alt text-lg font-bold"> Localisation</h3>
             <div>
               36 rue du Pelvoux
               <br />
@@ -110,7 +114,7 @@
             </div>
           </div>
           <div class="justify-content-start my-5">
-            <h3 class="text-lg font-bold">Département</h3>
+            <h3 class="fas fa-university text-lg font-bold"> Département</h3>
             <p>
               Génie Électrique et Informatique
               <br />
@@ -118,15 +122,15 @@
             </p>
           </div>
           <div class="justify-content-start mt-5">
-            <h3 class="text-lg font-bold">Responsable</h3>
+            <h3 class="far fa-envelope-open-text text-lg font-bold"> Responsable</h3>
             <p>
-              Génie Électrique et Informatique
+              Khalifa DJEMAL
               <br />
-              Industrielle (GEII)
+              k.djemal@iut.univ-evry.fr
             </p>
           </div>
           <div class="justify-content-start mt-5">
-            <h3 class="text-lg font-bold">Alternance</h3>
+            <h3 class="far fa-calendar-alt font-bold"> Alternance</h3>
             <p>
               - Septembre, octobre, novembre et décembre : une semaine sur deux
               en entreprise
@@ -135,6 +139,12 @@
               <br />
               - A partir du mois de juin : 100% en entreprise.
             </p>
+          </div>
+          <div class="justify-content-start mt-5">
+            <h3 class="fas fa-school font-bold "> Centre de formation (CFA)</h3>
+            <p class="underline">
+              <a href="https://www.cfa-eve.fr/Formation/82/licence-pro-metiers-de-linformatique-applications-web">Plus d’infos sur le site du CFA-EVE</a>
+              </p>
           </div>
         </aside>
       </div>
