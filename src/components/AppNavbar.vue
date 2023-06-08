@@ -4,7 +4,9 @@
       <div class="flex items-center justify-between h-16 py-12">
         <!-- Logo -->
         <div class="flex-shrink-0">
-          <img src="../assets/logo-dawii.png" alt="Logo" class="w-24" />
+          <a href="/">
+            <img src="../assets/logo-dawii.png" alt="Logo" class="w-24" />
+          </a>
         </div>
 
         <!-- Menu de navigation -->
@@ -15,7 +17,7 @@
               <a href="/" class="text-black hover:text-gray text-xl">Accueil</a>
             </li>
             <li>
-              <a href="/presentation" class="text-black hover:text-gray text-xl"
+              <a href="/la-formation" class="text-black hover:text-gray text-xl"
                 >La formation</a
               >
             </li>
@@ -31,21 +33,21 @@
               >
                 <li>
                   <a
-                    href="#"
+                    href="offrespt"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                     >Projets tutorés</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="offresalternance"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                     >Alternances</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="offresstage"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                     >Stages</a
                   >
@@ -53,7 +55,7 @@
               </ul>
             </li>
             <li>
-              <a href="#" class="text-black hover:text-gray text-xl"
+              <a href="espaces" class="text-black hover:text-gray text-xl"
                 >Mon espace</a
               >
             </li>
