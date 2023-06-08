@@ -1,11 +1,6 @@
 <template>
   <div class="md:container md:mx-auto">
     <div class="row">
-      <div class="bg-primary">
-        <h1 class="text-4xl">
-          LP Métiers de l’informatique : applications web
-        </h1>
-      </div>
       <p class="lead mt-3">Accueil / DAWII</p>
     </div>
     <br />
@@ -26,10 +21,10 @@
           (MIAW ASR2I) et (MIAW DAW2I) dans l’offre globale de l’établissement.
         </div>
       </div>
-      <div class="w-1/5 ml-8">
+      <div class="w-2/5 ml-8">
         <aside class="bg-zinc-200 p-2 px-3 pb-5">
           <div class="justify-content-start mb-5">
-            <h3 class="text-lg text-bold">Localisation</h3>
+            <h3 class="text-lg font-bold">Localisation</h3>
             <div>
               36 rue du Pelvoux
               <br />
@@ -39,7 +34,7 @@
             </div>
           </div>
           <div class="justify-content-start my-5">
-            <h3 class="text-lg text-bold">Département</h3>
+            <h3 class="text-lg font-bold">Département</h3>
             <p>
               Génie Électrique et Informatique
               <br />
@@ -47,12 +42,23 @@
             </p>
           </div>
           <div class="justify-content-start mt-5">
-            <h3 class="text-lg text-bold">Responsable</h3>
+            <h3 class="text-lg font-bold">Responsable</h3>
             <p>
               Génie Électrique et Informatique
               <br />
               Industrielle (GEII)
             </p>
+          </div>
+          <div class="justify-content-start mt-5">
+            <h3 class="text-lg font-bold">Alternance</h3>
+            <p>
+              - Septembre, octobre, novembre et décembre : une
+                semaine sur deux en entreprise
+              <br />
+              - De janvier à mai : deux semaines successives par mois
+              <br>
+              - A partir du mois de juin : 100% en entreprise.
+              </p>
           </div>
         </aside>
       </div>
