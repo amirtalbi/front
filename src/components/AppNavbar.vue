@@ -14,11 +14,11 @@
           <ul class="flex items-center space-x-10">
             <!-- Éléments de menu -->
             <li>
-              <a href="/" class="text-black hover:text-gray text-xl">Accueil</a>
+              <router-link :to="{ name: 'index' }" class="text-black hover:text-gray text-xl">Accueil</router-link>
             </li>
             <li>
-              <a href="/la-formation" class="text-black hover:text-gray text-xl"
-                >La formation</a
+              <router-link :to="{ name: 'la-formation' }" class="text-black hover:text-gray text-xl"
+                >La formation</router-link
               >
             </li>
             <!-- Élément de menu dropdown -->
@@ -32,32 +32,34 @@
                 class="absolute right-0 mt-2 py-2 w-40 bg-white border border-gray-200 rounded shadow"
               >
                 <li>
-                  <a
-                    href="offrespt"
+                  <router-link :to="{ name: 'offrespt' }"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                    >Projets tutorés</a
+                    >Projets tutorés</router-link
                   >
                 </li>
                 <li>
-                  <a
-                    href="offresalternance"
+                  <router-link
+                    :to="{ name: 'offresalternance' }"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                    >Alternances</a
+                    >Alternances</router-link
                   >
                 </li>
                 <li>
-                  <a
-                    href="offresstage"
+                  <router-link
+                    :to="{ name: 'offresstage' }"
                     class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                    >Stages</a
+                    >Stages</router-link
                   >
                 </li>
               </ul>
             </li>
             <li>
-              <a href="espaces" class="text-black hover:text-gray text-xl"
-                >Mon espace</a
+              <router-link :to="{ name: 'connexion' }" class="text-black hover:text-gray text-xl"
+                >Mon espace</router-link
               >
+            </li>
+            <li>
+              <router-link class="text-black hover:text-gray text-xl" :to="{ name: 'connexion' }">Déposer une offre</router-link>
             </li>
           </ul>
         </div>

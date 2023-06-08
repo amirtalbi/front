@@ -15,23 +15,23 @@ const routes = [
                 component: () => import("@/views/IndexView.vue"),
             },
             {
-                name: "login",
-                path: "login",
-                component: () => import("@/views/LoginView.vue"),
-            },
-            {
-                name: "presentation",
+                name: "la-formation",
                 path: "la-formation",
                 component: () => import("@/views/PresentationView.vue"),
             },
             {
-                path: "/offres",
+                path: "offres",
                 component: { template: "<router-view></router-view>" },
                 children: [
                     {
                         name: "offrespt", 
                         path: "/offrespt",
                         component: () => import("@/views/Offres/OffresPtView.vue"),
+                    },
+                    {
+                        name: 'ajouter-offrept',
+                        path: '/offrespt/ajouter',
+                        component: () => import("@/views/Offres/CreerOffrePt.vue")
                     },
                     {
                         name: "offresalternance",
@@ -46,15 +46,9 @@ const routes = [
                 ],
             },      
             {
-                path: "espaces",
-                component: { template: "<router-view></router-view>" },
-                children: [
-                    {
-                        name: "espaces",
-                        path: "/espaces",
-                        component: () => import("@/views/EspacesView.vue"),
-                    },
-                ],
+                name: "connexion",
+                path: "connexion",
+                component: () => import("@/views/LoginView.vue"),
             },
             {
                 path: "espaces/:id",
@@ -92,7 +86,7 @@ router.beforeEach((to, from, next) => {
         if (store.getters['users/isAuthenticated']) {
             next();
         } else {
-            next("/login");
+            next("/connexion");
         }
     } else {
         next();
