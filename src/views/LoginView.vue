@@ -40,16 +40,14 @@
 </template>
 
 <script>
-import Cookies from 'js-cookie';
-
 export default {
-  beforeEnter: (to, from, next) => {
-    const user = Cookies.get('user');
-    if (user.isAuthenticated) {
-      next("/"); // L'utilisateur est authentifié, continuer la navigation
-    } else {
-      next("/connexion"); // Rediriger vers la page de connexion si l'utilisateur n'est pas authentifié
-    }
+  beforeRouteEnter: (to, from, next) => {
+    next(vm => {
+      if(vm.$store.getters['users/isAuthenticated']) {
+        const user = vm.$store.state.users.user;
+        vm.$router.push({ name: user.role, params: { id: user.id } });
+      }
+    })
   },
   data() {
     return {
