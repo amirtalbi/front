@@ -1,6 +1,6 @@
 <template>
   <div class="md:container md:mx-auto">
-    <div class="my-4">
+    <div>
         <img src="../assets/iut_romero.jpg" alt="photo de l'iut d'évry, site de romero">
     </div>
     <div class="flex flex-row justify-around m-16">

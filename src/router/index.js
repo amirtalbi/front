@@ -34,6 +34,11 @@ const routes = [
                         component: () => import("@/views/Offres/CreerOffrePt.vue")
                     },
                     {
+                        name: 'ajouter-offrealt',
+                        path: '/offresalt/ajouter',
+                        component: () => import("@/views/Offres/CreerOffreAlt.vue")
+                    },
+                    {
                         name: "offresalternance",
                         path: "/offresalternance",
                         component: () => import("@/views/Offres/OffresAltView.vue"),
