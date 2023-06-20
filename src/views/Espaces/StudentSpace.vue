@@ -31,7 +31,7 @@
         <h3 class="text-3xl mb-4 text-center bg-teal-600 rounded-t-lg">
           Projet tutoré
         </h3>
-        <ul v-for="(note, index) in notes" v-bind:key="note.id" class="px-2">
+        <ul v-for="(projet, index) in projets" v-bind:key="projet.id" class="px-2">
           <li
             :class="[
               'list-none',
@@ -44,8 +44,7 @@
               'py-2',
             ]"
           >
-            <div>{{ note.matiere }}</div>
-            <div>{{ note.note }}</div>
+            <div>{{ projet.titre }}</div>
           </li>
         </ul>
       </div>
@@ -55,7 +54,11 @@
         <h3 class="text-3xl mb-4 text-center bg-teal-600 rounded-t-lg">
           Cours
         </h3>
-        <ul v-for="(cours, index) in courses" v-bind:key="cours.id" class="px-2">
+        <ul
+          v-for="(cours, index) in courses"
+          v-bind:key="cours.id"
+          class="px-2"
+        >
           <li
             :class="[
               'list-none',
@@ -114,7 +117,7 @@ export default {
       return this.$store.state.users.notes;
     },
     projets() {
-      return this.$store.state.users.projets;
+      return this.$store.state.offers.projects;
     },
     cours() {
       return this.$store.state.users.cours;
@@ -127,9 +130,7 @@ export default {
     const id = this.$route.params.id;
 
     await this.$store.dispatch('users/loadNotes', { id: id });
-    // await this.$store.dispatch('users/loadNotes', { id: id });
-    // await this.$store.dispatch('users/loadNotes', { id: id });
-    // await this.$store.dispatch('users/loadNotes', { id: id });
+    await this.$store.dispatch("offers/loadProjects");
   }
 };
 </script>

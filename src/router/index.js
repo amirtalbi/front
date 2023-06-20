@@ -51,6 +51,11 @@ const routes = [
                 component: () => import("@/views/LoginView.vue"),
             },
             {
+                name: "inscription",
+                path: "inscription",
+                component: () => import("@/views/InscriptionView.vue"),
+            },
+            {
                 path: "espaces/:id",
                 component: { template: "<router-view></router-view>" },
                 meta: { requiresAuth: true },
@@ -75,6 +80,12 @@ const routes = [
                     },
                 ],
             },
+            {
+                path: 'creer-offre',
+                name: 'creer-offre',
+                meta: { requiresAuth: true },
+                component: () => import("@/views/CreerOffre.vue")
+            }
         ],
     },
 ];

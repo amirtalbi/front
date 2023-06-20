@@ -89,11 +89,13 @@ export default {
                 throw new Error("Une erreur est survenue lors de la requête.");
             }
         },
-        // async loadEnterprise(__, payload) {
-        //     const response = await axios.get(endpoint + "/entreprise/" + payload.id)
-
-        //     return response.data.data;
-        // }
+        async createEntreprise(__, payload) {
+            const response = await axios.post(endpoint + '/entreprise', payload);
+            
+            if(response.status == 200) {
+                return response.data.data;
+            }
+        }
     },
     getters: {
         isAuthenticated: (state) => state.isAuthenticated,

@@ -30,11 +30,12 @@
         <button
           v-on:click="login"
           type="submit"
-          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block"
         >
           Se connecter
         </button>
       </div>
+      <router-link class="block text-center mt-4 underline" :to="{ name: 'inscription' }">Je n'ai pas de compte</router-link>
     </div>
   </div>
 </template>

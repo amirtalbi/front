@@ -24,8 +24,22 @@ export default {
     },
     actions: {
         async loadProjects({ commit }) {
-            const response = await axios.get(endpoint + '/offreAlternances');
+            const response = await axios.get(endpoint + '/projetTutores');
             commit('setProjects', response.data);
+        },
+        async loadAlternances({ commit }) {
+            const response = await axios.get(endpoint + '/offreAlternances');
+            commit('setAlternances', response.data.data);
+        },
+        async creerOffre(__, payload) {
+            let response = null;
+            if(payload.type == 'projet-tutore') {
+                response = await axios.post(endpoint + '/projetTutore', payload);
+            } else {
+                response = await axios.post(endpoint + '/offreAlternance', payload);
+            }
+
+            return response.data.data
         }
     },
 };

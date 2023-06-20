@@ -1,5 +1,5 @@
 <template>
-  <section class="py-4 bg-gray-100 h-full">
+  <section class="py-4 bg-gray-100 h-full mt-8">
     <div class="px-4 underline">
       <h2
         class="text-3xl font-bold leading-none tracking-tight text-gray-900 md:text-2xl"
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div>
-        <div v-if="selected !== null" class="card w-6/12 rounded-xl bg-white p-3 shadow-lg absolute top-40 right-16">
+        <div v-if="selected !== null" class="card w-6/12 rounded-xl bg-white p-3 shadow-lg absolute top-52 right-16">
           <h2 class="text-xl font-bold mb-2">{{ selected.titre }}</h2>
           <p class="text-gray-700 mb-4 text-justify">
             {{ selected.description }}

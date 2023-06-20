@@ -44,13 +44,6 @@
                     >Alternances</router-link
                   >
                 </li>
-                <li>
-                  <router-link
-                    :to="{ name: 'offresstage' }"
-                    class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                    >Stages</router-link
-                  >
-                </li>
               </ul>
             </li>
             <li>
