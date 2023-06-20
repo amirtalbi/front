@@ -51,6 +51,11 @@ const routes = [
                 component: () => import("@/views/LoginView.vue"),
             },
             {
+                name: "inscription",
+                path: "inscription",
+                component: () => import("@/views/InscriptionVieux.vue"),
+            },
+            {
                 path: "espaces/:id",
                 component: { template: "<router-view></router-view>" },
                 meta: { requiresAuth: true },
